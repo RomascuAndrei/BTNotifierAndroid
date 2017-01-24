@@ -1,0 +1,27 @@
+=============
+nuntius 1.0.2
+=============
+
+New Features and Fixes
+======================
+- Brand new colors! (thanks flyingrub)
+- No more repeated notifications, ongoing notifications are filtered out
+  Tested with Podcast Addict (https://github.com/holylobster/nuntius-android/issues/8)
+- More strings are translated (https://github.com/holylobster/nuntius-android/issues/9)
+
+
+=============
+nuntius 1.0.1
+=============
+
+New Features and Fixes
+======================
+- Added translations: Slovak (thanks prescott66), Polish (thanks piotrdrag), Spanish, Italian
+- Added License and Web site info
+- Bugfixes
+
+=============
+nuntius 1.0.0
+=============
+
+Initial Release.

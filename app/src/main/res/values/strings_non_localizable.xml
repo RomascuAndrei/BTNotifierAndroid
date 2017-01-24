@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">BT Notifier</string>
+    <string name="web_site" translatable="false">https://github.com/holylobster</string>
+    <string name="holylobster" translatable="false">HolyLobster</string>
+    <string name="license_type" translatable="false">GNU General Public License 2</string>
+
+</resources>

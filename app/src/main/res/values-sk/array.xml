@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="pref_min_notification_priority_entries">
+    <item>Minimálna</item>
+    <item>Nízka</item>
+    <item>Predvolená</item>
+    <item>Vysoká</item>
+    <item>Maximálna</item>
+  </string-array>
+</resources>

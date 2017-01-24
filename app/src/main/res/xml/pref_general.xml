@@ -1,0 +1,65 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <SwitchPreference
+        android:key="main_enable_switch"
+        android:title="@string/enable_nuntius"
+        />
+
+    <ListPreference
+        android:key="pref_min_notification_priority"
+        android:title="@string/pref_min_notification_priority"
+        android:dialogTitle="@string/pref_min_notification_priority"
+        android:summary="@string/pref_min_notification_priority_summary"
+        android:entries="@array/pref_min_notification_priority_entries"
+        android:entryValues="@array/pref_min_notification_priority_values"
+        android:defaultValue="@string/pref_min_notification_priority_default" />
+
+    <Preference
+        android:key="app_blacklist"
+        android:title="@string/app_blacklist_title"
+        android:summary="@string/app_blacklist_summary">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="org.holylobster.nuntius"
+            android:targetClass="org.holylobster.nuntius.activity.ApplicationBlacklist"
+            />
+
+    </Preference>
+
+    <Preference
+        android:key="license"
+        android:title="@string/pref_license_title"
+        android:summary="@string/license_type">
+    </Preference>
+
+    <Preference
+        android:key="web_site"
+        android:title="@string/holylobster"
+        android:summary="@string/web_site">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="@string/web_site"
+            />
+
+    </Preference>
+
+    <Preference
+            android:key="ip"
+            android:title="@string/ip"
+            android:visibility="gone" />
+
+    <Preference
+            android:key="qrcode"
+            android:title="QRCode"
+            android:summary=""/>
+
+    <Preference
+        android:key="version"
+        android:title="@string/version"
+        android:summary="">
+    </Preference>
+
+</PreferenceScreen>

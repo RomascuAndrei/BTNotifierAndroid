@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2015 - Holy Lobster
+  ~
+  ~ Nuntius is free software; you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation; either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Nuntius is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Nuntius. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<android.support.v7.widget.Toolbar
+    style="@style/ToolBarStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:minHeight="@dimen/abc_action_bar_default_height_material"
+    android:elevation="5dp">
+
+</android.support.v7.widget.Toolbar>

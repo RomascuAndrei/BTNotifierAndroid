@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_min_notification_priority_entries">
+        <item>Mín</item>
+        <item>Baja</item>
+        <item>Predeterminada</item>
+        <item>Alta</item>
+        <item>Máx</item>
+    </string-array>
+</resources>
