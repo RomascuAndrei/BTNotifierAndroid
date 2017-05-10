@@ -28,23 +28,34 @@
 
     </Preference>
 
-    <Preference
-        android:key="license"
-        android:title="@string/pref_license_title"
-        android:summary="@string/license_type">
-    </Preference>
+
 
     <Preference
-        android:key="web_site"
-        android:title="@string/holylobster"
-        android:summary="@string/web_site">
+        android:title="@string/license_info"
+        android:summary="@string/license_type"
+        android:key="license">
 
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="@string/web_site"
+            android:data="@string/github_location"
             />
 
     </Preference>
+
+
+
+    <Preference
+        android:key="web_site"
+        android:title="@string/desktop_app"
+        android:summary="@string/desktop_app_info">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="@string/desktop_app_link"
+            />
+
+    </Preference>
+
 
     <Preference
             android:key="ip"
@@ -61,5 +72,6 @@
         android:title="@string/version"
         android:summary="">
     </Preference>
+
 
 </PreferenceScreen>

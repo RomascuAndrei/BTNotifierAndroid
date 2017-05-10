@@ -18,14 +18,17 @@
 package org.holylobster.nuntius.activity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+import android.util.Log;
 
 import org.holylobster.nuntius.R;
+import org.holylobster.nuntius.ads.AdManager;
 
 
 public class SplashScreenActivity extends Activity {
@@ -38,6 +41,14 @@ public class SplashScreenActivity extends Activity {
         SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(this);
         final boolean gotIt = settings.getBoolean("gotIt", false);
 
+
+            Log.d("ADS_REACH","Ads started loading");
+
+            Context context = getApplicationContext();
+            AdManager adManager = new AdManager();
+            adManager.createAds(context);
+
+
         ((GradientDrawable) findViewById(R.id.splash).getBackground().getCurrent())
                 .setGradientRadius(getResources().getDimension(
                         R.dimen.gradient_radius));
@@ -45,7 +56,14 @@ public class SplashScreenActivity extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Class activityClass = gotIt ? SettingsActivity.class : WelcomeActivity.class;
+                //Class activityClass = gotIt ? SettingsActivity.class : WelcomeActivity.class;
+
+                Class activityClass = WelcomeActivity.class;
+
+                /* interventie 1 - IDEA (n-am schimbat inca) interstitial ADS to show always
+                original:
+                               Intent i = new Intent(SplashScreenActivity.this, activityClass);
+                               */
                 Intent i = new Intent(SplashScreenActivity.this, activityClass);
                 startActivity(i);
                 finish();

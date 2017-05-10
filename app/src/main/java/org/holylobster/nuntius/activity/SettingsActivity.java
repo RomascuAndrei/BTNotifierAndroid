@@ -29,6 +29,7 @@ import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
@@ -48,6 +49,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import org.holylobster.nuntius.R;
+import org.holylobster.nuntius.ads.AdManager;
 import org.holylobster.nuntius.connection.Server;
 import org.holylobster.nuntius.notifications.IntentRequestCodes;
 import org.holylobster.nuntius.notifications.NotificationListenerService;
@@ -69,6 +71,7 @@ public class SettingsActivity extends ActionBarActivity {
 
     AdView mAdView;
 
+    static boolean preloadedAdShown = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +82,7 @@ public class SettingsActivity extends ActionBarActivity {
         AdRequest adRequest = new AdRequest.Builder()
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)        // All emulators
                 .addTestDevice("E9DEB34031182776A4E765DCEF19F10D")  // My phone
+                .addTestDevice("5C195A4AE6121C0D42702AAAE118DC01")
                 .build();
         mAdView.loadAd(adRequest);
 
@@ -99,6 +103,7 @@ public class SettingsActivity extends ActionBarActivity {
                 .beginTransaction()
                 .replace(R.id.content_frame, new SettingsFragment())
                 .commit();
+
 
 
 
@@ -130,10 +135,12 @@ public class SettingsActivity extends ActionBarActivity {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.pref_general);
 
+
             mInterstitialAd = new InterstitialAd(getActivity());
             mInterstitialAd.setAdUnitId("ca-app-pub-6887589184636373/9378703641");
             AdRequest adRequestInterstial = new AdRequest.Builder()
                     .addTestDevice("E9DEB34031182776A4E765DCEF19F10D")
+                    .addTestDevice("5C195A4AE6121C0D42702AAAE118DC01")
                     .build();
             mInterstitialAd.loadAd(adRequestInterstial);
 
@@ -143,10 +150,17 @@ public class SettingsActivity extends ActionBarActivity {
                 public void onAdClosed() {
                     AdRequest adRequest = new AdRequest.Builder()
                             .addTestDevice("E9DEB34031182776A4E765DCEF19F10D")
+                            .addTestDevice("5C195A4AE6121C0D42702AAAE118DC01")
                             .build();
                     mInterstitialAd.loadAd(adRequest);
                 }
+
+                @Override
+                public void onAdLoaded() {
+                    Log.d("ADS_REACH","Main interstitial loaded");
+                }
             });
+
 
 
 
@@ -167,6 +181,33 @@ public class SettingsActivity extends ActionBarActivity {
                 }
             });
 
+            //Interventie 4 - acum ads work cum trebuie pe switch
+
+            /*
+            final Preference myPrefAd1 = (Preference) findPreference("main_enable_switch");
+            myPrefAd1.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                public boolean onPreferenceClick(Preference preference) {
+
+                    if(!preloadedAdShown) {
+                        InterstitialAd ad2 = AdManager.getAd2();
+                        if (ad2.isLoaded()) {
+                            ad2.show();
+                        }
+                    }
+
+                    else{
+                        mInterstitialAd.show();
+                    }
+
+                    preloadedAdShown = true;
+
+                    return true;
+                }
+            });
+            */
+
+
+
 
 
         }
@@ -182,12 +223,15 @@ public class SettingsActivity extends ActionBarActivity {
             br = new BroadcastReceiver() {
                 @Override
                 public void onReceive(Context context, Intent intent) {
+                    //Interventie 5 (aici era ad, removed because it didn't show on time)
                     mInterstitialAd.show();
+
                     String status = intent.getStringExtra("status");
                     Log.d(TAG, "Received server status change: " + status);
                     updatePreference(findPreference("main_enable_switch"));
 
                 }
+
             };
             getActivity().registerReceiver(br, filter);
 
@@ -233,6 +277,11 @@ public class SettingsActivity extends ActionBarActivity {
                 preference.setSummary(String.format("v%s (%d)", packageInfo.versionName, packageInfo.versionCode));
             }
         }
+
+
+
+
+
 
         public PackageInfo getPackageInfo() {
             try {
@@ -355,5 +404,7 @@ public class SettingsActivity extends ActionBarActivity {
         if(mAdView!=null){  // Check if Adview is not null in case of fist time load.
             mAdView.resume();}
     }
+
+
 
 }

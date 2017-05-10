@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="dialog_ask_notification_access">The app requires access to notifications. When the notification settings will open, select Nuntius checkbox and confirm. Then hit the back button.</string>
+    <string name="dialog_ask_notification_access">BT Notifier requires access to notifications. When the notification settings will open, select BT Notifier checkbox and confirm. Then hit the back button.</string>
     <string name="button_got_it">Got it</string>
-    <string name="label_welcome_text">This app allows you to proxy the notifications with other devices. Just enable the notification sharing for Nuntius after pressing "Got it" and pair the Bluetooth with the specific device.</string>
+    <string name="label_welcome_text">This app allows you to proxy the notifications with other devices. Just enable the notification sharing for BT Notifier after pressing "Got it" and pair the Bluetooth with the specific device.</string>
     <string name="enable_nuntius">Enable app</string>
     <string name="bluetooth_not_available">Bluetooth is not available on this device</string>
     <string name="bluetooth_not_enabled">App requires Bluetooth to be enabled</string>
-    <string name="enable_notification_toast_hint">Now select Nuntius checkbox and confirm. Then hit the back button.</string>
+    <string name="enable_notification_toast_hint">Now select BT Notifier checkbox and confirm. Then hit the back button.</string>
     <string name="pref_license_title">License</string>
     <string name="pref_min_notification_priority">Minimum notification priority</string>
     <string name="pref_min_notification_priority_summary">Set the minimum notification priority from which the app will share notification</string>
@@ -17,7 +17,9 @@
     </plurals>
     <string name="notification_not_enabled">This app requires access to the notification to be enabled</string>
     <string name="not_paired">Please pair your device to a computer</string>
-    <string name="version">Nuntius Version</string>
+    <string name="version">Version</string>
+    <string name="license_info">License information and code</string>
+
     <string name="app_blacklist_title">Blacklisted Apps</string>
     <string name="app_blacklist_summary">Ignore notifications from selected apps</string>
     <string name="blacklisted_title">Blacklisted Apps</string>

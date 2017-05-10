@@ -8,13 +8,6 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-    <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-permission android:name="android.permission.WRITE_SMS" />
-    <uses-permission android:name="android.permission.READ_SMS" />
-    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
-
-
     <!--This meta-data tag is required to use Google Play Services.-->
     <meta-data android:name="com.google.android.gms.version"
         android:value="@integer/google_play_services_version" />
@@ -77,6 +70,8 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.ApplicationBlacklist" />
+
+
         </activity>
 
         <service
@@ -87,6 +82,9 @@
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
         </service>
+
+
+
 
     </application>
 

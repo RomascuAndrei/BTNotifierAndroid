@@ -3,7 +3,16 @@
 
     <string name="app_name" translatable="false">BT Notifier</string>
     <string name="web_site" translatable="false">https://github.com/holylobster</string>
+    <string name="desktop_app_link" translatable="false">https://github.com/Romascu/BTNotifierAndroid/blob/master/desktop_version.md</string>
+
+
+    <string name="github_location" translatable="false">http://github.com/Romascu/BTNotifierAndroid</string>
     <string name="holylobster" translatable="false">HolyLobster</string>
     <string name="license_type" translatable="false">GNU General Public License 2</string>
+
+    <string name="desktop_app" translatable="false">Desktop version</string>
+    <string name="desktop_app_info" translatable="false">About desktop version</string>
+
+
 
 </resources>

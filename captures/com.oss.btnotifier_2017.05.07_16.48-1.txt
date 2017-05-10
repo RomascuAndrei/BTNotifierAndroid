@@ -1,0 +1,128 @@
+AGGREGATED OVER LAST 24 HOURS:
+Per-Package Stats:
+  * com.oss.btnotifier / u0a149:
+      * com.oss.btnotifier / u0a149:
+               TOTAL: 3,9% (35MB-48MB-54MB/28MB-40MB-46MB over 6)
+                 Top: 0,99% (35MB-46MB-51MB/28MB-38MB-44MB over 4)
+              Imp Fg: 3,0% (49MB-52MB-54MB/42MB-44MB-46MB over 2)
+            Receiver: 0,00%
+          (Last Act): 0,72% (33MB-33MB-33MB/26MB-26MB-26MB over 1)
+            (Cached): 0,11%
+      * org.holylobster.nuntius.notifications.NotificationListenerService:
+        Process: com.oss.btnotifier
+            Running count 1 / time 3,3%
+              Bound count 1 / time 3,3%
+          Executing count 1 / time 0,00%
+  * com.oss.btnotifier / u0a150:
+      * com.oss.btnotifier / u0a150:
+               TOTAL: 2,2% (31MB-31MB-32MB/24MB-24MB-24MB over 2)
+                 Top: 2,2% (31MB-31MB-32MB/24MB-24MB-24MB over 2)
+  * com.oss.btnotifier / u0a151:
+      * com.oss.btnotifier / u0a151:
+               TOTAL: 44% (26MB-27MB-28MB/19MB-20MB-20MB over 38)
+                 Top: 44% (26MB-27MB-28MB/19MB-20MB-20MB over 38)
+          (Last Act): 0,02%
+            (Cached): 0,06%
+
+Summary:
+  * com.oss.btnotifier / u0a151:
+           TOTAL: 44% (26MB-27MB-28MB/19MB-20MB-20MB over 38)
+             Top: 44% (26MB-27MB-28MB/19MB-20MB-20MB over 38)
+      (Last Act): 0,02%
+        (Cached): 0,06%
+  * com.oss.btnotifier / u0a149:
+           TOTAL: 3,9% (35MB-48MB-54MB/28MB-40MB-46MB over 6)
+             Top: 0,99% (35MB-46MB-51MB/28MB-38MB-44MB over 4)
+          Imp Fg: 3,0% (49MB-52MB-54MB/42MB-44MB-46MB over 2)
+        Receiver: 0,00%
+      (Last Act): 0,72% (33MB-33MB-33MB/26MB-26MB-26MB over 1)
+        (Cached): 0,11%
+  * com.oss.btnotifier / u0a150:
+           TOTAL: 2,2% (31MB-31MB-32MB/24MB-24MB-24MB over 2)
+             Top: 2,2% (31MB-31MB-32MB/24MB-24MB-24MB over 2)
+
+Run time Stats:
+  SOff/Norm: +2h18m59s827ms
+  SOn /Norm: +12m16s640ms
+       Mod : +354ms
+      TOTAL: +2h31m16s821ms
+
+          Start time: 2017-05-06 14:36:47
+  Total elapsed time: +1d2h11m48s893ms (partial) libdvm.so chromeview
+
+AGGREGATED OVER LAST 3 HOURS:
+Per-Package Stats:
+  * com.oss.btnotifier / u0a149:
+      * com.oss.btnotifier / u0a149:
+               TOTAL: 6,5% (35MB-48MB-54MB/28MB-40MB-46MB over 6)
+                 Top: 1,6% (35MB-46MB-51MB/28MB-38MB-44MB over 4)
+              Imp Fg: 4,9% (49MB-52MB-54MB/42MB-44MB-46MB over 2)
+            Receiver: 0,00%
+          (Last Act): 1,2% (33MB-33MB-33MB/26MB-26MB-26MB over 1)
+            (Cached): 0,19%
+      * org.holylobster.nuntius.notifications.NotificationListenerService:
+        Process: com.oss.btnotifier
+            Running count 1 / time 5,5%
+              Bound count 1 / time 5,5%
+          Executing count 1 / time 0,00%
+  * com.oss.btnotifier / u0a150:
+      * com.oss.btnotifier / u0a150:
+               TOTAL: 3,7% (31MB-31MB-32MB/24MB-24MB-24MB over 2)
+                 Top: 3,7% (31MB-31MB-32MB/24MB-24MB-24MB over 2)
+  * com.oss.btnotifier / u0a151:
+      * com.oss.btnotifier / u0a151:
+               TOTAL: 74% (26MB-27MB-28MB/19MB-20MB-20MB over 38)
+                 Top: 74% (26MB-27MB-28MB/19MB-20MB-20MB over 38)
+          (Last Act): 0,04%
+            (Cached): 0,10%
+
+Summary:
+  * com.oss.btnotifier / u0a151:
+           TOTAL: 74% (26MB-27MB-28MB/19MB-20MB-20MB over 38)
+             Top: 74% (26MB-27MB-28MB/19MB-20MB-20MB over 38)
+      (Last Act): 0,04%
+        (Cached): 0,10%
+  * com.oss.btnotifier / u0a149:
+           TOTAL: 6,5% (35MB-48MB-54MB/28MB-40MB-46MB over 6)
+             Top: 1,6% (35MB-46MB-51MB/28MB-38MB-44MB over 4)
+          Imp Fg: 4,9% (49MB-52MB-54MB/42MB-44MB-46MB over 2)
+        Receiver: 0,00%
+      (Last Act): 1,2% (33MB-33MB-33MB/26MB-26MB-26MB over 1)
+        (Cached): 0,19%
+  * com.oss.btnotifier / u0a150:
+           TOTAL: 3,7% (31MB-31MB-32MB/24MB-24MB-24MB over 2)
+             Top: 3,7% (31MB-31MB-32MB/24MB-24MB-24MB over 2)
+
+Run time Stats:
+  SOff/Norm: +1h18m56s962ms
+  SOn /Norm: +12m16s640ms
+       Mod : +354ms
+      TOTAL: +1h31m13s956ms
+
+          Start time: 2017-05-07 10:37:29
+  Total elapsed time: +6h11m7s441ms (partial) libdvm.so chromeview
+
+CURRENT STATS:
+Per-Package Stats:
+  * com.oss.btnotifier / u0a151:
+      * com.oss.btnotifier / u0a151:
+               TOTAL: 100% (26MB-27MB-27MB/19MB-20MB-20MB over 34)
+                 Top: 100% (26MB-27MB-27MB/19MB-20MB-20MB over 34)
+          (Last Act): 0,05%
+            (Cached): 0,03%
+
+Summary:
+  * com.oss.btnotifier / u0a151:
+           TOTAL: 100% (26MB-27MB-27MB/19MB-20MB-20MB over 34)
+             Top: 100% (26MB-27MB-27MB/19MB-20MB-20MB over 34)
+      (Last Act): 0,05%
+        (Cached): 0,03%
+
+Run time Stats:
+  SOff/Norm: +59m4s896ms (running)
+  SOn /Norm: +2m4s440ms
+       Mod : +354ms
+      TOTAL: +1h1m9s690ms
+
+          Start time: 2017-05-07 15:47:26
+  Total elapsed time: +1h1m10s242ms (partial) libdvm.so chromeview

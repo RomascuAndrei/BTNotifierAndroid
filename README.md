@@ -6,6 +6,6 @@ Link to original repo with license:
 
 https://github.com/holylobster/nuntius-android/blob/master/COPYING
 
-Original repository source and more practical and interesting info and details:  
+Original repository source and more practical and interesting info and details:
 
 https://github.com/holylobster/nuntius-android
