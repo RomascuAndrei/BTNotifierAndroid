@@ -24,7 +24,7 @@ public class AdManager {
 
             // Create an ad.
             mAd1 = new InterstitialAd(context);
-            mAd1.setAdUnitId("ca-app-pub-6887589184636373/9519472047");
+            mAd1.setAdUnitId("");
 
             AdRequest adRequest = new AdRequest.Builder()
                     .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
@@ -36,7 +36,7 @@ public class AdManager {
 
         /*
         mAd2 = new InterstitialAd(context);
-        mAd2.setAdUnitId("ca-app-pub-6887589184636373/1996205244");
+        mAd2.setAdUnitId("");
 
 
         AdRequest adRequest2 = new AdRequest.Builder()
