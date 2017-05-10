@@ -137,7 +137,7 @@ public class SettingsActivity extends ActionBarActivity {
 
 
             mInterstitialAd = new InterstitialAd(getActivity());
-            mInterstitialAd.setAdUnitId("ca-app-pub-6887589184636373/9378703641");
+            mInterstitialAd.setAdUnitId("");
             AdRequest adRequestInterstial = new AdRequest.Builder()
                     .addTestDevice("E9DEB34031182776A4E765DCEF19F10D")
                     .addTestDevice("5C195A4AE6121C0D42702AAAE118DC01")
