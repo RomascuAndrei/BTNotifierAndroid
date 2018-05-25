@@ -1,2 +1,2 @@
- The app does not colect any personal or personally identifiable information of any kind. 
- The permissions requested are used strictly for the app's internal functionality.
+The app does not colect any personal or personally identifiable information of any kind.
+Permissions: the permissions are required to achieve the app's internal functionality and are either requested at install-time (for older Android versions) or at run-time (for newer Android versions).
